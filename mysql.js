@@ -1,9 +1,10 @@
 var mysql      = require('mysql');
 var connection = mysql.createConnection({
-  host     : 'localhost',
+  host     : 'svc.sel5.cloudtype.app',
   user     : 'root',
   password : 'kmkmartin0302',
-  database : 'data'
+  database : 'data',
+  port : 31576
 });
  
 connection.connect();
