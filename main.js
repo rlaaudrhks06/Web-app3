@@ -9,10 +9,11 @@ app.use(express.static('views'));
 const mysql = require('mysql');
 const { title } = require('process')
 const db = mysql.createConnection({
-  host     : 'localhost',
+  host     : 'svc.sel5.cloudtype.app',
   user     : 'root',
   password : 'kmkmartin0302',
-  database : 'board'
+  database : 'board',
+  port : 31576
 });
  
 db.connect();
